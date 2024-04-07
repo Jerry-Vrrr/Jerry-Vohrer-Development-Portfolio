@@ -10,13 +10,13 @@ const NavBar = () => {
             <img src={jvlogo} className="jv-logo" alt="logo" />
         </a> 
         <li>
-            <a href="#about">About</a>
+            <a className='nav-btn' href="#about">About</a>
         </li>
         <li>
-            <a href="#projects">Projects</a>
+            <a className='nav-btn' href="#projects">Projects</a>
         </li>
         <li>
-            <a href="#contact">Contact</a>
+            <a className='nav-btn' href="#contact">Contact</a>
         </li>
     </ul>
     </nav>
