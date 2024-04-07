@@ -1,0 +1,21 @@
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .nav {
+    display: none;
+    width: 25px;
+    height: 3px;
+    // background-color: #333;
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .nav {
+      display: none;
+    }
+    .hamburger-menu {
+      display: block;
+    }
+  }

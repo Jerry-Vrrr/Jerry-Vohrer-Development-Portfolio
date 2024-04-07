@@ -1,0 +1,33 @@
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+h2 {
+    text-align: center;
+    margin: 0em 1em 0em 1em;
+    font-size: 3.5em;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: fixed;
+  
+//   @media (max-width: 768px) {
+//     flex-direction: column;
+//   }
+  
+  .container-item {
+    border: solid 1px #ccc;
+    width: calc(50% - 10px);
+    margin-bottom: 2px;
+    border: solid 1px #ccc;
+    
+    // @media (max-width: 768px) {
+    //   width: 100%;
+    // }
+  }
+}

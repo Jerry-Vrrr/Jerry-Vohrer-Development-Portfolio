@@ -1,36 +1,30 @@
 
 body {
-  overflow: hidden;
+  overflow: x-hidden;
 }
-
 .nav-bar {
-  height: 8em;
-  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 2em;
+  z-index: 1;
+  background-color: rgb(242, 218, 218);
   overflow:-moz-hidden-unscrollable;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   width: stretch; 
   position: fixed;
-  padding-right: 4em;
+  padding: 4em;
 }
 
-.nav-buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
 .jv-logo {
-  width: 17%;
-  margin-top: -3em;
+  width: 10em;
   align-self: flex-start;
-  border-radius: 2px; 
-  box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 4) ;
 }
 .nav-btn {
   font-weight: 950;
   font-size: x-large;
+  padding: 1.5em;
   text-decoration: none;
   color: black;
   align-self: center;

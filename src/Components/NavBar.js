@@ -1,24 +1,27 @@
 import React from 'react';
 import '../styles/NavBar.scss';
-import jvlogo from '../jv-logo.png';
+import jvlogo from '../jvlogo1.png';
+import HamburgerMenu from './HamburgerMenu';
 
 const NavBar = () => {
   return (
     <nav className='nav-bar'>
-      <ul className='nav-buttons'>
-        <a href="#home">
+                <a href="#home">
             <img src={jvlogo} className="jv-logo" alt="logo" />
         </a> 
-        <li>
+      {/* <ul className='nav-buttons'>
+
+        <li> */}
             <a className='nav-btn' href="#about">About</a>
-        </li>
-        <li>
+        {/* </li>
+        <li> */}
             <a className='nav-btn' href="#projects">Projects</a>
-        </li>
-        <li>
+        {/* </li>
+        <li> */}
             <a className='nav-btn' href="#contact">Contact</a>
-        </li>
-    </ul>
+        {/* </li>
+    </ul> */}
+    <HamburgerMenu />
     </nav>
   );
 };
