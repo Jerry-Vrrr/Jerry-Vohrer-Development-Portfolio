@@ -1,0 +1,31 @@
+
+body {
+  overflow: x-hidden;
+}
+
+.nav-bar {
+  height: 5em;
+  background-color: transparent;
+  overflow:-moz-hidden-unscrollable;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  width: 100%; 
+}
+
+.nav-bar__logo {
+  height: 100%;
+  width: 10em;
+  padding: 1em;
+}
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:baseline;
+  height: 100%;
+  width: 100%;
+  padding: 1em;
+}
+.jv-logo {
+  width: 15%;
+  margin-top: -.8em;
+}

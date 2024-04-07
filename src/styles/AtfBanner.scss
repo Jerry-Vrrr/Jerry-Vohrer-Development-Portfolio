@@ -1,0 +1,26 @@
+.atf-banner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.image-container {
+  flex: 1;
+  width: 50%;
+}
+
+.image-container img {
+  width: 10em;
+//   height: auto;
+}
+
+.text-container {
+  flex: 2;
+  padding: 0 20px;
+}
+
+.text-container h1 {
+  width: 50%;
+  font-size: 24px;
+  font-weight: bold;
+}
