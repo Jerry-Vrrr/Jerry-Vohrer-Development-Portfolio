@@ -4,7 +4,7 @@ import '../styles/Projects.scss';
 const Projects = () => {
   return (
     <div className='projects'>
-      <h2>When you need a bit of ridiculousness taken very seriously, call Jerry...</h2>
+      <h2></h2>
     <div className="container">
       <div className="container-item">
         {/* Container 1 */}

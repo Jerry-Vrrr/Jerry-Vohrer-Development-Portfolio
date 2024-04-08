@@ -1,0 +1,35 @@
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 1200px;
+    padding: 2em;
+  }
+
+  label {
+    font-style: italic;
+    font-weight: bold;
+}
+
+  .review {
+    flex: 0 0 300px; 
+    margin-right: 1em; 
+    padding: 1em;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 130px;
+    animation: slideIn 24s infinite linear;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-300px * 4 - 1em * 3));
+    }
+  }
+  
+ 

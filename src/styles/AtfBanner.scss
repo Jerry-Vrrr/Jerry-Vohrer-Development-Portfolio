@@ -56,12 +56,13 @@
 }
 
 .text-container {
-    margin-top: 4em;
+    margin-top: 5.5em;
     justify-content: center;
     position: relative;
     align-items: center;
     flex: 1;
     padding: 20px;
+    width: 55%;
     
 }
 
@@ -69,18 +70,18 @@ h1 {
     position: absolute;
     z-index: -500;
     font-weight: bold;
-    line-height: 1.2em;
-    font-size: 5em; // Default font size for larger screens
+    line-height: 1.5em;
+    font-size: 2.5em; // Default font size for larger screens
 }
 
 @media screen and (max-width: 768px) {
     .text-container h1 {
-        font-size: 3em; // Font size for smaller screens
+        font-size: 2em; // Font size for smaller screens
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .text-container h1 {
-        font-size: 4em; // Font size for medium-sized screens
+        font-size: 1.5em; // Font size for medium-sized screens
     }
 }
