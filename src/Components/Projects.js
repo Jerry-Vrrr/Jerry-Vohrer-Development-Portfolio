@@ -5,6 +5,9 @@ import react from '../icons8-react-native-48.png';
 import rails from '../icons8-ruby-on-rails-32.png';
 import ruby from '../icons8-ruby-programming-language-50.png';
 import sass from '../icons8-sass-50.png';
+import plantthumb from '../plant-thumb.png';
+import recthumb from '../rec-thumb.png';
+import aquaticthumb from '../aquatic-thumb.png'
 
 const Projects = () => {
   // Initialize a state object where each key represents a container's hover state
@@ -27,8 +30,35 @@ const Projects = () => {
 
   return (
     <div className='projects'>
-      <h2>Some Things I've Worked Really Hard On!</h2>
+      <h2>Some Thingama-hoodads On Which I Have Worked Quite Laboriously!</h2>
       <div className="container">
+      <div className="container-item">
+          <h3>Rec.Me<img src={ruby}></img><img src={rails}></img><img src={sass}></img></h3>
+          <p><strong>Music Recommendation App</strong> Gamified to test music knowledge and decision making. Can <i>you</i> get from Beyonce to Black Sabbath in 6 moves or less?</p>
+          <div
+            className="video-container"
+            onMouseEnter={() => handleMouseEnter('aquatic')}
+            onMouseLeave={() => handleMouseLeave('aquatic')}
+          >
+            {isContainerHovered('aquatic') ? (
+              <iframe
+                src="https://www.youtube.com/embed/zQ8caaUxIvY?autoplay=1&mute=1&controls=0&showinfo=0&rel=0"
+                title="Aquatic Video"
+                allowFullScreen
+              ></iframe>
+            ) : (
+              <img
+                src={aquaticthumb}
+                alt="Aquatic Dreams Thumbnail"
+              />
+            )}
+          </div>
+          <div className='project-links'>
+        <a href="">Deployed</a>
+         <a href="">Presentation</a>
+         <a href="">GitHub</a>
+       </div>
+        </div>
         <div className="container-item">
           <h3>Rec.Me<img src={react}></img><img src={js}></img><img src={sass}></img></h3>
           <p><strong>Music Recommendation App</strong> Gamified to test music knowledge and decision making. Can <i>you</i> get from Beyonce to Black Sabbath in 6 moves or less?</p>
@@ -41,13 +71,12 @@ const Projects = () => {
               <iframe
                 src="https://www.youtube.com/embed/LJAvswcowI8?autoplay=1&mute=1&controls=0&showinfo=0"
                 title="Rec Me Video"
-                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
             ) : (
               <img
-                src="https://i9.ytimg.com/vi_webp/LJAvswcowI8/mqdefault.webp?v=627a86e7&sqp=CNzi-7AG&rs=AOn4CLCEdtRzqhk0x7k0jhJveEQfuknoYA"
+                src={recthumb}
                 alt="Rec Me Thumbnail"
               />
             )}
@@ -70,13 +99,12 @@ const Projects = () => {
               <iframe
                 src="https://www.youtube.com/embed/A6RAWMUp-7g?autoplay=1&mute=1&controls=0&showinfo=0"
                 title="Plant Swapper Video"
-                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
             ) : (
               <img
-                src="https://i9.ytimg.com/vi_webp/A6RAWMUp-7g/mqdefault.webp?v=661edf19&sqp=CMi_-7AG&rs=AOn4CLByS4Wrx5PFwWiyjyoDDkE18dHkeA"
+                src={plantthumb}
                 alt="Plant Swapper Thumbnail"
               />
             )}

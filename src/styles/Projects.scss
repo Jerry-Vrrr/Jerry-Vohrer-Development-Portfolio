@@ -1,93 +1,69 @@
+
 .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  // justify-content: center;
   align-items: flex-start; 
-  padding: 1em;
+  // text-align: center; 
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly; 
-  width: 100%; 
-  height: 100%;/* Ensure the container spans the full width */
-  // padding: 1em; /* This creates space between flex items */
-
-p {
-  font-size: smaller;
-}
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: auto;
+  margin: auto;
+  height: auto; /* Changed from '100%' to 'auto' for more flexibility */
 }
 
 .container-item {
   border: 1px solid #ccc;
-  width: calc((100% / 3) - .5em); /* Adjust for 3 items per row, accounting for gap */
-  padding: .5em; /* Padding inside the items */
-  box-sizing: border-box; /* Include padding and border in the width */
-  margin-bottom: 1em; /* Space between items */
-  overflow: hidden; /* Hide overflowing content */
-
-  /* Set initial scale */
-  transform: scale(1);
-  transition: transform 0.3s ease; /* Add transition for smooth zoom effect */
-
-  &:hover {
-    /* Zoom in on hover */
-    transform: scale(1.025); /* Increase the scale to zoom in */
-  }
-
-  iframe {
-    align-self: center;
-    width: 100%;
-    height: 100%; /* Set height to 100% to fill container */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-  }
-}
-
-@media (max-width: 768px) {
-  .container-item {
-    width: calc(100% - 4em); /* Full width minus padding on smaller screens */
-  }
+  width: calc((100% / 3) - 6em); /* Adjust for 3 items per row, accounting for gap */
+  box-sizing: border-box;
+  margin-bottom: 1em;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the items vertically */
+  justify-content: center; /* Center the items horizontally */
 }
 
 .project-links {
   display: flex;
-  justify-content: space-around;
-  margin-top: .5em;
+  justify-content: center; /* Ensure links are centered */
+  width: 100%; /* Take full width to center content */
+  margin-top: 0.5em;
+}
 
-  a {
-    color: #333;
-    text-decoration: none;
-    font-size: smaller;
-  }
+a {
+  color: #333;
+  text-decoration: none;
+  font-size: smaller;
+  margin: 0 10px; /* Give some space around each link */
 }
 
 .video-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  position: relative;
-  width: 300px; /* Adjust as needed */
-  height: 200px; /* Adjust as needed */
+  width: 100%;
+  padding-top: 56.25%;
+  margin: auto; 
   overflow: hidden;
+  position: relative; /* Keep this to position the img and iframe absolutely */
 }
 
-.video-container img {
-  position: absolute;
+.video-container img, .video-container iframe {
+  position: absolute; /* Position absolutely within the container */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  transition: opacity 0.3s ease;
+  object-fit: cover;
 }
 
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
 
 .video-container:hover img {
   opacity: 0;
@@ -96,18 +72,26 @@ p {
 .video-container:hover iframe {
   opacity: 1;
 }
-h2 {
-  // border: solid .09em black;
-  // text-decoration: underline;
-  // word-spacing: .1em;
-  letter-spacing: .2em;
+
+h2, h3 {
+  text-align: center; 
+  width: 100%; 
 }
+
 h3 {
-  font-size: x-large;
+  font-size: larger;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
   margin-bottom: -.5em;
   text-decoration: underline;
-  img {
-    width: 1.2em;
-    margin-left: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
   }
+  
 }

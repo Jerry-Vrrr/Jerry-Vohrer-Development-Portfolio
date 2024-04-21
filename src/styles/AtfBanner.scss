@@ -1,25 +1,75 @@
 .atf-banner {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 5em;
+    overflow-x: hidden;
+    justify-content: left;
+    align-items: center; 
+    padding-top: 4em;
 }
 
 .image-container {
-    flex: 1;
-    width: 50%;
+    flex: 0 1 100%; 
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -500;
 }
 
 .frankie {
     margin-top: 7em;
-    margin-left: -4em;
-    z-index: 1;
-    width: 30em;
-    height: auto;
-    animation: bounce 15s infinite;
-    position: sticky;
+    max-width: 70%; /* To ensure it scales within the container */
+    height: auto; /* To maintain aspect ratio */
     opacity: 0.9;
+    // z-index: 1;
+   position: sticky; 
+    // animation: bounce 15s infinite;
+}
+
+.frankie-clicked {
+    margin-top: 7em;
+    max-width: 70%; /* To ensure it scales within the container */
+    height: auto; /* To maintain aspect ratio */
+    opacity: 0.9;
+    // z-index: 1;
+   position: sticky; 
+    animation: bounce 15s infinite;
+}
+
+.text-container {
+    flex: 0 0 50%; /* Flex-grow, flex-shrink, flex-basis */
+    display: flex;
+    margin-top: 7em;
+    z-index: -500;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 10px 20px 10px;
+}
+
+h1 {
+    /* Remove absolute positioning to keep within the container */
+    font-weight: bold;
+    line-height: 1.5em;
+    font-size: 2.5em;
+    // padding-right: 3em; 
+}
+
+@media (max-width: 768px) {
+    .atf-banner {
+        flex-direction: column;
+        // padding: 2em;
+    }
+
+    .image-container, .text-container {
+        flex: 0 1 100%;
+    }
+
+    h1 {
+        font-size: 2.5em; 
+    }
+    // .frankie {
+    //     animation: none; 
+    //     // max-width: 50%;
+    // }
 }
 
 @keyframes bounce {
@@ -55,33 +105,4 @@
     }
 }
 
-.text-container {
-    margin-top: 5.5em;
-    justify-content: center;
-    position: relative;
-    align-items: center;
-    flex: 1;
-    padding: 20px;
-    width: 55%;
-    
-}
 
-h1 {
-    position: absolute;
-    z-index: -500;
-    font-weight: bold;
-    line-height: 1.5em;
-    font-size: 2.5em; // Default font size for larger screens
-}
-
-@media screen and (max-width: 768px) {
-    .text-container h1 {
-        font-size: 2em; // Font size for smaller screens
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .text-container h1 {
-        font-size: 1.5em; // Font size for medium-sized screens
-    }
-}

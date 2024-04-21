@@ -1,13 +1,11 @@
 
-body {
-  overflow: x-hidden;
-}
+
 .nav-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 2em;
+  height: 1.5em;
   z-index: 1;
   background-color: rgb(242, 218, 218);
   overflow:-moz-hidden-unscrollable;
@@ -15,6 +13,21 @@ body {
   width: stretch; 
   position: fixed;
   padding: 4em;
+  transition: top 0.3s;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.5s ease-in-out;
+}
+
+.nav-bar.hidden {
+  top: -100%; 
+}
+
+@media (max-width: 500px) {
+  .nav-bar .nav-btn {
+    display: none;
+  }
 }
 
 .jv-logo {
@@ -28,4 +41,10 @@ body {
   text-decoration: none;
   color: black;
   align-self: center;
+}
+
+@media (max-width: 500px) {
+  .nav-btn {
+    display: none;
+  }
 }
