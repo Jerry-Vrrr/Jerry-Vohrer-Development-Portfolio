@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ProjectModal from './ProjectModal';
 import '../styles/Projects.scss';
 import js from '../icons8-js-50.png';
 import react from '../icons8-react-native-48.png';
@@ -28,11 +29,23 @@ const Projects = () => {
     return hoverStates[id] || false;
   };
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className='projects'>
+            <ProjectModal isOpen={isModalOpen} onClose={closeModal}>
+      </ProjectModal>
       <h2>Some Thingama-hoodads On Which I Have Worked Quite Laboriously!</h2>
       <div className="container">
-      <div className="container-item">
+      <div className="container-item" onClick={openModal}>
           <h3>Fish-Biz P.O.S. System<img src={ruby}></img><img src={rails}></img></h3>
           <p><strong>Real World Application</strong><br/> Under Construction for an aquarium supply and maintenance business for sales, appointment scheduling, recording & more.</p>
           <div

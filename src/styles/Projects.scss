@@ -2,9 +2,7 @@
 .projects {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
   align-items: flex-start; 
-  // text-align: center; 
 }
 
 .container {
@@ -20,21 +18,21 @@
 
 .container-item {
   border: 1px solid #ccc;
-  width: calc((100% / 3) - 6em); /* Adjust for 3 items per row, accounting for gap */
+  width: calc((100% / 3) - 6em); 
   box-sizing: border-box;
   margin-bottom: 1em;
   overflow: hidden;
   display: flex;
   padding: .5em;
   flex-direction: column;
-  align-items: center; /* Center the items vertically */
-  justify-content: center; /* Center the items horizontally */
+  align-items: center; 
+  justify-content: center;
 }
 
 .project-links {
   display: flex;
-  justify-content: center; /* Ensure links are centered */
-  width: 100%; /* Take full width to center content */
+  justify-content: center; 
+  width: 100%; 
   margin-top: 0.5em;
 }
 
@@ -42,7 +40,7 @@ a {
   color: #333;
   text-decoration: none;
   font-size: smaller;
-  margin: 0 10px; /* Give some space around each link */
+  margin: 0 10px; 
 }
 
 .video-container {
@@ -54,18 +52,17 @@ a {
   padding-top: 56.25%;
   margin: auto; 
   overflow: hidden;
-  position: relative; /* Keep this to position the img and iframe absolutely */
+  position: relative; 
 }
 
 .video-container img, .video-container iframe {
-  position: absolute; /* Position absolutely within the container */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 
 .video-container:hover img {
   opacity: 0;
