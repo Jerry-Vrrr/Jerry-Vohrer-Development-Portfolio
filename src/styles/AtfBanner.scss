@@ -17,26 +17,23 @@
 
 .frankie {
     margin-top: 7em;
-    max-width: 70%; /* To ensure it scales within the container */
+    max-width: 80%; /* To ensure it scales within the container */
     height: auto; /* To maintain aspect ratio */
     opacity: 0.9;
-    // z-index: 1;
    position: sticky; 
-    // animation: bounce 15s infinite;
 }
 
 .frankie-clicked {
     margin-top: 7em;
-    max-width: 70%; /* To ensure it scales within the container */
-    height: auto; /* To maintain aspect ratio */
+    max-width: 80%; 
+    height: auto; 
     opacity: 0.9;
-    // z-index: 1;
    position: sticky; 
     animation: bounce 15s infinite;
 }
 
 .text-container {
-    flex: 0 0 50%; /* Flex-grow, flex-shrink, flex-basis */
+    flex: 0 0 50%; 
     display: flex;
     margin-top: 7em;
     z-index: -500;
@@ -46,17 +43,15 @@
 }
 
 h1 {
-    /* Remove absolute positioning to keep within the container */
     font-weight: bold;
-    line-height: 1.5em;
+    line-height: 1.3em;
     font-size: 2.5em;
-    // padding-right: 3em; 
+    padding-right: 4em; 
 }
 
 @media (max-width: 768px) {
     .atf-banner {
         flex-direction: column;
-        // padding: 2em;
     }
 
     .image-container, .text-container {
@@ -66,10 +61,6 @@ h1 {
     h1 {
         font-size: 2.5em; 
     }
-    // .frankie {
-    //     animation: none; 
-    //     // max-width: 50%;
-    // }
 }
 
 @keyframes bounce {

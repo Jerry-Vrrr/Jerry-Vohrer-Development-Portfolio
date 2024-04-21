@@ -33,8 +33,8 @@ const Projects = () => {
       <h2>Some Thingama-hoodads On Which I Have Worked Quite Laboriously!</h2>
       <div className="container">
       <div className="container-item">
-          <h3>Rec.Me<img src={ruby}></img><img src={rails}></img><img src={sass}></img></h3>
-          <p><strong>Music Recommendation App</strong> Gamified to test music knowledge and decision making. Can <i>you</i> get from Beyonce to Black Sabbath in 6 moves or less?</p>
+          <h3>Fish-Biz P.O.S. System<img src={ruby}></img><img src={rails}></img></h3>
+          <p><strong>Real World Application</strong><br/> Under Construction for an aquarium supply and maintenance business for sales, appointment scheduling, recording & more.</p>
           <div
             className="video-container"
             onMouseEnter={() => handleMouseEnter('aquatic')}

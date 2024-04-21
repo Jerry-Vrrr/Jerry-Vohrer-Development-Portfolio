@@ -11,10 +11,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: center;
   width: auto;
   margin: auto;
-  height: auto; /* Changed from '100%' to 'auto' for more flexibility */
+  height: auto;
+  margin-right: 7em;
 }
 
 .container-item {
@@ -24,6 +25,7 @@
   margin-bottom: 1em;
   overflow: hidden;
   display: flex;
+  padding: .5em;
   flex-direction: column;
   align-items: center; /* Center the items vertically */
   justify-content: center; /* Center the items horizontally */
@@ -73,18 +75,20 @@ a {
   opacity: 1;
 }
 
-h2, h3 {
+h2 {
   text-align: center; 
   width: 100%; 
+  margin-right: 4em;
 }
 
 h3 {
   font-size: larger;
   display: flex;
   align-items: flex-end;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-bottom: -.5em;
   text-decoration: underline;
+  letter-spacing: .2em;
 }
 
 @media screen and (max-width: 768px) {
