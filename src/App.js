@@ -1,4 +1,5 @@
 import NavBar from './Components/NavBar';
+import React from 'react';
 import './styles/App.css';
 import AtfBanner from './Components/AtfBanner';
 import Projects from './Components/Projects';
