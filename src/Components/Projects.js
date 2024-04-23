@@ -8,7 +8,10 @@ import ruby from '../icons8-ruby-programming-language-50.png';
 import sass from '../icons8-sass-50.png';
 import plantthumb from '../plant-thumb.png';
 import recthumb from '../rec-thumb.png';
-import aquaticthumb from '../aquatic-thumb.png'
+import aquaticthumb from '../aquatic-thumb.png';
+import wakeythumb from '../wakey-thumb.png';
+import foliothumb from '../folio-thumb.png'
+import banana from '../bananastand-GOB-tmb.jpg'
 
 const Projects = () => {
   // Initialize a state object where each key represents a container's hover state
@@ -128,7 +131,91 @@ const Projects = () => {
         <a href="">GitHub</a>
       </div>
         </div>
-        {/* ...additional container items */}
+      </div>
+      <div className="container">
+      <div className="container-item" onClick={openModal}>
+      <h3>Wakey Wakey App<img src={ruby}></img><img src={rails}></img></h3>
+          <p><strong>Scrape, Filter & Email</strong><br/>One day app, scrapes a gym website for daily workout, suggests equipment, pulls local weather and emails you bright an early.</p>
+          <div
+            className="video-container"
+            onMouseEnter={() => handleMouseEnter('wakey')}
+            onMouseLeave={() => handleMouseLeave('wakey')}
+          >
+            {isContainerHovered('wakey') ? (
+              <iframe
+                src="https://www.youtube.com/embed/zeF_KB8g9WE?autoplay=1&mute=1&controls=0&showinfo=0&rel=0"
+                title="Wakey Video"
+                allowFullScreen
+              ></iframe>
+            ) : (
+              <img
+                src={wakeythumb}
+                alt="Wakey Thumbnail"
+              />
+            )}
+          </div>
+          <div className='project-links'>
+        <a href="">Deployed</a>
+         <a href="">Presentation</a>
+         <a href="">GitHub</a>
+       </div>
+        </div>
+        <div className="container-item">
+          <h3>My Portfolio!<img src={react}></img><img src={js}></img><img src={sass}></img></h3>
+          <p><strong>Check it out!</strong> <br/>100% custom JS, SASS and Animations. No Packages. Just Fun! Have you found all of the Easter Eggs yet?</p>
+          <div
+            className="video-container"
+            onMouseEnter={() => handleMouseEnter('folio')}
+            onMouseLeave={() => handleMouseLeave('folio')}
+          >
+            {isContainerHovered('folio') ? (
+              <iframe
+                src="https://www.youtube.com/embed/pWnbUWdleWs?autoplay=1&mute=1&controls=0&showinfo=0"
+                title="Folio Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            ) : (
+              <img
+                src={foliothumb}
+                alt="Portfolio Thumbnail"
+              />
+            )}
+          </div>
+          <div className='project-links'>
+        <a href="">Deployed</a>
+         <a href="">Presentation</a>
+         <a href="">GitHub</a>
+       </div>
+        </div>
+        <div className="container-item">
+          <h3>Banana Stand<img src={react}></img><img src={ruby}></img><img src={rails}></img></h3>
+          <p><strong>Beachside Banana Stand</strong> <br/>Sell Bananas while you try to complete a 6th project worthy of filling this space. No open flames...</p>
+          <div
+            className="video-container"
+            onMouseEnter={() => handleMouseEnter('banana')}
+            onMouseLeave={() => handleMouseLeave('banana')}
+          >
+            {isContainerHovered('banana') ? (
+              <iframe
+                src="https://www.youtube.com/embed/iBLJFigZm9o?autoplay=1&mute=1&controls=0&showinfo=0"
+                title="banana Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            ) : (
+              <img
+                src={banana}
+                alt="banana Thumbnail"
+              />
+            )}
+          </div>
+          <div className='project-links'>
+         <a href="">Deployed</a>
+         <a href="">Presentation</a>
+        <a href="">GitHub</a>
+      </div>
+        </div>
       </div>
     </div>
   );
