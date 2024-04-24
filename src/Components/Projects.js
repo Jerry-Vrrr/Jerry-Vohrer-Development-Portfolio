@@ -13,7 +13,7 @@ import wakeythumb from '../wakey-thumb.png';
 import foliothumb from '../folio-thumb.png'
 import banana from '../bananastand-GOB-tmb.jpg'
 
-const Projects = () => {
+const Projects = React.forwardRef((props, ref) => {
   // Initialize a state object where each key represents a container's hover state
   const [hoverStates, setHoverStates] = useState({});
 
@@ -43,11 +43,11 @@ const Projects = () => {
   };
 
   return (
-    <div className='projects'>
+    <div className='projects' ref={ref}>
             <ProjectModal isOpen={isModalOpen} onClose={closeModal}>
       </ProjectModal>
       <h2>Some Thingama-hoodads On Which I Have Worked Quite Laboriously!</h2>
-      <div className="container">
+      <div className="container" >
       <div className="container-item" onClick={openModal}>
           <h3>Fish-Biz P.O.S. System<img src={ruby}></img><img src={rails}></img></h3>
           <p><strong>Real World Application</strong><br/> Under Construction for an aquarium supply and maintenance business for sales, appointment scheduling, recording & more.</p>
@@ -218,7 +218,7 @@ const Projects = () => {
         </div>
       </div>
     </div>
-  );
-};
+);
+});
 
 export default Projects;

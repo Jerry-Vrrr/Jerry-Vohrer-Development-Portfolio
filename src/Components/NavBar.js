@@ -38,7 +38,7 @@ const NavBar = () => {
 
   return (
     <nav className={`nav-bar ${hidden ? 'hidden' : ''}`}>
-                <a href="#home">
+                <a href="/">
             <img src={jvlogo} className="jv-logo" alt="logo" />
         </a> 
       {/* <ul className='nav-buttons'>
@@ -47,7 +47,7 @@ const NavBar = () => {
             <a className='nav-btn' href="#about">About</a>
         {/* </li>
         <li> */}
-            <a className='nav-btn' href="#projects">Projects</a>
+            <a className='nav-btn' href="/projects">Projects</a>
         {/* </li>
         <li> */}
             <a className='nav-btn' href="#contact">Contact</a>
