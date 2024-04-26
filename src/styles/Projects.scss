@@ -13,7 +13,7 @@
   width: auto;
   margin: auto;
   height: auto;
-  margin-right: 7em;
+  // margin-right: 1em;
 }
 
 .container-item {
@@ -27,6 +27,7 @@
   flex-direction: column;
   align-items: center; 
   justify-content: center;
+  cursor: pointer ;
 }
 
 .project-links {
@@ -75,7 +76,7 @@ a {
 h2 {
   text-align: center; 
   width: 100%; 
-  margin-right: 4em;
+  // margin-right: 4em;
   margin-bottom: 1em;
 }
 
@@ -91,8 +92,11 @@ h3 {
 
 @media screen and (max-width: 768px) {
   .container {
+    width: 80%;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+  .container-item {
     width: 100%;
   }
   

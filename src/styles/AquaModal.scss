@@ -1,0 +1,20 @@
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 2em;
+
+    .modal-title {
+        align-self: center;
+        font-size: large;
+    }
+}
+
+.modal-links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: flex-end;
+    justify-content: space-around;
+    align-self: flex-end;
+}
