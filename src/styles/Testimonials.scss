@@ -32,4 +32,10 @@
     }
   }
   
- 
+  .carousel:hover .review {
+    animation-play-state: paused; 
+  }
+  .review:hover {
+    transform: scale(5); /* Increase size on hover */
+    opacity: .7; 
+  }
