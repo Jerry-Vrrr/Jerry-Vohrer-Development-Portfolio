@@ -51,7 +51,7 @@ const Projects = React.forwardRef((props, ref) => {
       <div className="container" >
       <div className="container-item" onClick={openModal}>
           <h3>Eelvis's Tank & Tetra<img src={ruby}></img><img src={rails}></img></h3>
-          <p><strong>Bespoke P.O.S, inventory</strong><br/>  and appointment scheduling app, tailored for an aquarium suply & maintenance business. Hail to the kingfish, baby!</p>
+          <p><strong>Bespoke P.O.S, inventory</strong><br/>  & appointment scheduling app, tailored for an aquarium supply & maintenance business. Hail to the kingfish, baby!</p>
           <div
             className="video-container"
             onMouseEnter={() => handleMouseEnter('aquatic')}
@@ -106,7 +106,7 @@ const Projects = React.forwardRef((props, ref) => {
         </div>
         <div className="container-item">
           <h3>Plant Swapper<img src={react}></img><img src={ruby}></img><img src={rails}></img></h3>
-          <p><strong>Plant Propagation Marketplace</strong> Chat via mobile with other plant heads and swap plants, seeds, and clippings from anywhere in the universe that FedEx delivers!</p>
+          <p><strong>Plant Propagation Marketplace</strong> Chat via mobile with other plant heads, swap plants, seeds, & clippings from anywhere in the universe that FedEx delivers!</p>
           <div
             className="video-container"
             onMouseEnter={() => handleMouseEnter('plantSwapper')}
@@ -136,7 +136,7 @@ const Projects = React.forwardRef((props, ref) => {
       <div className="container">
       <div className="container-item" onClick={openModal}>
       <h3>Wakey Wakey App<img src={ruby}></img><img src={rails}></img></h3>
-          <p><strong>Scrape, Filter & Email</strong><br/>One day app, scrapes a gym website for daily workout, suggests equipment, pulls local weather and emails you bright an early.</p>
+          <p><strong>Scrape, Filter & Email</strong><br/>One day project that scrapes a gym website for daily workout, suggests equipment, pulls local weather & emails you bright & early.</p>
           <div
             className="video-container"
             onMouseEnter={() => handleMouseEnter('wakey')}
@@ -163,7 +163,7 @@ const Projects = React.forwardRef((props, ref) => {
         </div>
         <div className="container-item">
           <h3>Killer Portfolio!<img src={react}></img><img src={js}></img><img src={sass}></img></h3>
-          <p><strong>Check it out!</strong> <br/>100% custom JS, SASS and Animations. No Filler. Just Fun! Have you found all of the Easter Eggs yet?</p>
+          <p><strong>Check it out!</strong> <br/>100% custom JS, SASS & Animations. No Filler. Just Fun! Have you found all of the Easter Eggs yet?</p>
           <div
             className="video-container"
             onMouseEnter={() => handleMouseEnter('folio')}
