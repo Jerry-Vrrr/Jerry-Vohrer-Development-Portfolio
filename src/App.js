@@ -8,7 +8,6 @@ import Testimonials from './Components/Testimonials';
 
 function App() {
   const projectsRef = useRef(null);
-
   // Function to scroll to projects section
   const scrollToProjects = () => {
     projectsRef.current.scrollIntoView({ behavior: 'smooth' });

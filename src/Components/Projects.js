@@ -15,6 +15,12 @@ import banana from '../bananastand-GOB-tmb.jpg'
 import AquaModal from './AquaModal';
 
 const Projects = React.forwardRef((props, ref) => {
+
+ const aquaImages = [
+    "https://agentestudio.com/uploads/ckeditor/pictures/1938/pos_design_8.png",
+    "https://cdn.dribbble.com/users/2338294/screenshots/6846027/inventory_artwork_dribble_4x.jpg",
+    "https://img.freepik.com/premium-vector/user-interface-entering-personal-information-login-into-website-account-concept-secure-login-password-protection_110633-1392.jpg"
+  ]
   // Initialize a state object where each key represents a container's hover state
   const [hoverStates, setHoverStates] = useState({});
 
@@ -45,7 +51,7 @@ const Projects = React.forwardRef((props, ref) => {
 
   return (
     <div className='projects' ref={ref}>
-            <ProjectModal isOpen={isModalOpen} onClose={closeModal} aquaModal={AquaModal}>
+            <ProjectModal isOpen={isModalOpen} onClose={closeModal}   AquaModalComponent={AquaModal} images={aquaImages}>
       </ProjectModal>
       <h2>Some Thingama-hoodads On Which I Have Worked Quite Laboriously!</h2>
       <div className="container" >

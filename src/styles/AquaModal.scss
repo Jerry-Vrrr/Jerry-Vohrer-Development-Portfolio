@@ -1,20 +1,12 @@
-.modal-content {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding: 2em;
 
-    .modal-title {
-        align-self: center;
-        font-size: large;
-    }
-}
 
 .modal-links {
+    position: absolute; /* Position absolutely within .modal-content */
+    bottom: 0; /* Align to the bottom of the .modal-content */
+    width: 100%; /* Take full width of the parent container */
     display: flex;
     flex-direction: row;
-    width: 100%;
-    align-content: flex-end;
-    justify-content: space-around;
-    align-self: flex-end;
+    justify-content: flex-start; /* Distributes children evenly */
+    align-items: center; /* Centers children vertically */
+    padding: 1.5em;
 }
