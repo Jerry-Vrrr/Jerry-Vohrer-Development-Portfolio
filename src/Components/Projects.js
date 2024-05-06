@@ -56,8 +56,8 @@ const Projects = React.forwardRef((props, ref) => {
       <h2>Some Thingama-hoodads On Which I Have Worked Quite Laboriously!</h2>
       <div className="container" >
       <div className="container-item" onClick={openModal}>
-          <h3>Eelvis's Tank & Tetra<img src={ruby}></img><img src={rails}></img></h3>
-          <p><strong>Bespoke P.O.S, inventory</strong><br/>  & appointment scheduling app, tailored for an aquarium supply & maintenance business. Hail to the kingfish, baby!</p>
+          <h3>Aquatic Dreams<img src={ruby}></img><img src={rails}></img></h3>
+          <p><strong>Bespoke P.O.S, E-commerce,</strong><br/>  inventory & appointment scheduling app, tailored for an aquarium supply & maintenance business. </p>
           <div
             className="video-container"
             onMouseEnter={() => handleMouseEnter('aquatic')}
@@ -110,34 +110,7 @@ const Projects = React.forwardRef((props, ref) => {
          <a href="">GitHub</a>
        </div>
         </div>
-        <div className="container-item">
-          <h3>Plant Swapper<img src={react}></img><img src={ruby}></img><img src={rails}></img></h3>
-          <p><strong>Plant Propagation Marketplace</strong> Chat via mobile with other plant heads, swap plants, seeds, & clippings from anywhere in the universe that FedEx delivers!</p>
-          <div
-            className="video-container"
-            onMouseEnter={() => handleMouseEnter('plantSwapper')}
-            onMouseLeave={() => handleMouseLeave('plantSwapper')}
-          >
-            {isContainerHovered('plantSwapper') ? (
-              <iframe
-                src="https://www.youtube.com/embed/A6RAWMUp-7g?autoplay=1&mute=1&controls=0&showinfo=0"
-                title="Plant Swapper Video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            ) : (
-              <img
-                src={plantthumb}
-                alt="Plant Swapper Thumbnail"
-              />
-            )}
-          </div>
-          <div className='project-links'>
-         <a href="">Deployed</a>
-         <a href="">Presentation</a>
-        <a href="">GitHub</a>
-      </div>
-        </div>
+
       </div>
       <div className="container">
       <div className="container-item" onClick={openModal}>
@@ -168,52 +141,24 @@ const Projects = React.forwardRef((props, ref) => {
        </div>
         </div>
         <div className="container-item">
-          <h3>Killer Portfolio!<img src={react}></img><img src={js}></img><img src={sass}></img></h3>
-          <p><strong>Check it out!</strong> <br/>100% custom JS, SASS & Animations. No Filler. Just Fun! Have you found all of the Easter Eggs yet?</p>
+          <h3>Plant Swapper<img src={react}></img><img src={ruby}></img><img src={rails}></img></h3>
+          <p><strong>Plant Propagation Marketplace</strong> Chat via mobile with other plant heads, swap plants, seeds, & clippings from anywhere in the universe that FedEx delivers!</p>
           <div
             className="video-container"
-            onMouseEnter={() => handleMouseEnter('folio')}
-            onMouseLeave={() => handleMouseLeave('folio')}
+            onMouseEnter={() => handleMouseEnter('plantSwapper')}
+            onMouseLeave={() => handleMouseLeave('plantSwapper')}
           >
-            {isContainerHovered('folio') ? (
+            {isContainerHovered('plantSwapper') ? (
               <iframe
-                src="https://www.youtube.com/embed/pWnbUWdleWs?autoplay=1&mute=1&controls=0&showinfo=0"
-                title="Folio Video"
+                src="https://www.youtube.com/embed/A6RAWMUp-7g?autoplay=1&mute=1&controls=0&showinfo=0"
+                title="Plant Swapper Video"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
             ) : (
               <img
-                src={foliothumb}
-                alt="Portfolio Thumbnail"
-              />
-            )}
-          </div>
-          <div className='project-links'>
-        <a href="">Deployed</a>
-         <a href="">Presentation</a>
-         <a href="">GitHub</a>
-       </div>
-        </div>
-        <div className="container-item">
-          <h3>Banana Stand<img src={react}></img><img src={ruby}></img><img src={rails}></img></h3>
-          <p><strong>Beachside Banana Stand</strong> <br/>Sell Bananas while you try to complete a 6th project worthy of filling this space. No open flames...</p>
-          <div
-            className="video-container"
-            onMouseEnter={() => handleMouseEnter('banana')}
-            onMouseLeave={() => handleMouseLeave('banana')}
-          >
-            {isContainerHovered('banana') ? (
-              <iframe
-                src="https://www.youtube.com/embed/iBLJFigZm9o?autoplay=1&mute=1&controls=0&showinfo=0"
-                title="banana Video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            ) : (
-              <img
-                src={banana}
-                alt="banana Thumbnail"
+                src={plantthumb}
+                alt="Plant Swapper Thumbnail"
               />
             )}
           </div>

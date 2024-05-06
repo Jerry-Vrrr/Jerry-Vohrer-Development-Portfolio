@@ -3,13 +3,14 @@ import '../styles/AquaModal.scss'
 import github from '../github.png'
 import play from '../play.png'
 import linked from '../linked.png'
+
 export default function AquaModal() {
 
   return (
-    <div >
+    <div>
         <div className='modal-content'>
-        <h1 className='modal-title' >Eelvis's Aquarium Supply & Maintenance</h1>
-        <p>A bespoke Point of Sale, inventory, and appointment scheduling application I tailored specifically for a client utilizing Ruby on Rails with a dash of Bootstrap for that chic styling. This was completed in about 150 hours over a 6 week period. Now, a little confession... 'Eelvis' isn't the real name of the company; I coined it to shield the true identity. Also, I couldn't resist the charm of picturing Eelvis takin care of business, making all the guppies swoon. Kindly note, this application is currently in its... Beta phase... Yes, pun intended!.</p>
+        <h1 className='modal-title' >Aquatic Dreams</h1>
+        <p>A bespoke Point of Sale, E-Commerce, inventory & appointment scheduling application I tailored specifically for the needs of a client utilizing Ruby on Rails, Bootstrap for styling including Stripe for payments & Authorization Zero for Auth, login and sessions. Completed in about 150 hours over a 6 week period. This application is currently in its... Beta phase...</p>
         </div>
         <div className='modal-links'>
             <a href="https://aqua-modal.herokuapp.com/" target="_blank" ><img src={github}></img></a>
