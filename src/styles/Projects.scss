@@ -13,12 +13,12 @@
   width: auto;
   margin: auto;
   height: auto;
-  // margin-right: 1em;
+  margin-right: 6em;
 }
 
 .container-item {
   border: 1px solid #ccc;
-  width: calc((100% / 3) - 6em); 
+  width: calc((100% / 2) - 6em); 
   box-sizing: border-box;
   margin-bottom: 1em;
   overflow: hidden;
@@ -76,7 +76,7 @@ a {
 h2 {
   text-align: center; 
   width: 100%; 
-  // margin-right: 4em;
+  margin-right: 4em;
   margin-bottom: 1em;
 }
 

@@ -7,9 +7,13 @@
   }
 
   label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     font-style: italic;
     font-weight: bold;
 }
+
 
   .review {
     flex: 0 0 300px; 
@@ -17,11 +21,16 @@
     padding: 1em;
     border-radius: 10px;
     background-color: white;
-    opacity: 0.4;
+    opacity: 0.6;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 130px;
     animation: slideIn 24s infinite linear;
+    h4 {
+      margin-bottom: -.08em;
+    }
   }
+
+
   
   @keyframes slideIn {
     0% {
@@ -38,4 +47,9 @@
   .review:hover {
     transform: scale(5); /* Increase size on hover */
     opacity: .7; 
+  }
+  .profile {
+    width: 2.5em;
+    align-self: flex-start;
+    margin: .75em;
   }
