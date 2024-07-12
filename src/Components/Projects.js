@@ -53,11 +53,12 @@ const Projects = React.forwardRef((props, ref) => {
     <div className='projects' ref={ref}>
             <ProjectModal isOpen={isModalOpen} onClose={closeModal}   AquaModalComponent={AquaModal} images={aquaImages}>
       </ProjectModal>
-      <h2>Some Thingama-hoodads On Which I Have Worked Quite Laboriously!</h2>
+      <h2>My Work: Transforming Ideas into Solutions</h2>
+      <h4 className='description'>Streamlining procedures and crafting innovative solutions to help businesses save time and money.</h4>
       <div className="container" >
       <div className="container-item" onClick={openModal}>
           <h3>Aquatic Dreams<img src={ruby}></img><img src={rails}></img></h3>
-          <p><strong>P.O.S.  Reporting</strong>, invoicing, inventory and data charting app, tailored for an aquarium supply & maintenance business to transition them from their long term paper model.</p>
+          <p><strong>P.O.S.  Reporting</strong>, invoicing, inventory and data charting app, tailored for an aquarium supply & maintenance business to transition them from their O.G. paper model.</p>
           <div
             className="video-container"
             onMouseEnter={() => handleMouseEnter('aquatic')}

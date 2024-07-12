@@ -1,24 +1,26 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%; 
-  width: 100%; 
+  height: 100%;
+  width: 100%;
+  /* margin-left: 2em; */
+
 }
 
 body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: stretch;
-  margin: 0;
   overflow-x: hidden;
-  overflow-y: auto; 
   min-height: 100vh;
-  flex-wrap: wrap;
-  justify-content: flex-start;
   background-color: rgb(242, 218, 218);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 
 .teal-section {
@@ -29,4 +31,7 @@ body {
   background-color: rgb(219, 45, 120);
 }
 
-/*# sourceMappingURL=App.css.map */
+nav, .atf-banner, .about {
+  width: 100%;
+  box-sizing: border-box;
+}
