@@ -7,12 +7,12 @@ const About = React.forwardRef((props, ref) => {
       
         <strong>At the age of twelve I wanted to be the clerk at a video store...</strong>
         <p>
-        &emsp; I wasn't born an overachiever, but I'm making up for lost time. I find new ways to learn every day. I read 3 books per week and find ways to improve productivity 
-        day over day in both my personal and professional life. My days generally transition from challenging work projects until clockout and then challenging personal projects until it's time to eat spaghetti in bed with my cat. Usually around 8:30pm...
-        <br/>
-        &emsp;I start every day with a rigorous workout. I squeeze in another at lunch or while mulling over a complex problem after work.  
-        I got rid of my car to increase my walking, biking, and reflection time. I left the US to learn Spanish, driven by a love of learning and to connect with more people. I don't drink and have been plant based for a few years now. I have given up anything that wasn't serving me, my goals or the world around me. 
-        Some people see my habits as extreme, and that's ok. Maybe they are, but I would rather be extreme in my pursuit of being even one percent better than to be complacent.
+        I wasn't born an overachiever, but I'm making up for lost time. I'm constantly seeking new ways to learn and improve, devouring three books weekly and refining my productivity daily, both personally and professionally. My days are filled with challenging projects until evening, followed by personal pursuits that push my limits until I unwind like everyone else.. by eating spaghetti in bed with my cat around 8:30 pm.
+        <br/><br/>
+        Starting each day with a rigorous workout, I seize every opportunity for physical activity—whether during lunch breaks or while pondering complex problems post-work. By embracing more walking, biking, and reflection time, I've even given up my car. Leaving the US to learn Spanish reflects my passion for learning and connecting globally.
+        <br/><br/>
+        I've shed anything that doesn't align with my goals or values, driven by an unwavering commitment to achieving continuous improvement. Some may view my dedication as extreme, but I embrace this intensity in my relentless pursuit of success.
+
       </p>
       <i>Boy am I glad Blockbuster went under...</i>
 

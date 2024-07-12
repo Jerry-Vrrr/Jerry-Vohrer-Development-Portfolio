@@ -10,7 +10,7 @@ export default function AquaModal() {
     <div>
         <div className='modal-content'>
         <h1 className='modal-title' >Aquatic Dreams</h1>
-        <p>A bespoke Point of Sale, E-Commerce, inventory & appointment scheduling application I tailored specifically for the needs of a client utilizing Ruby on Rails, Bootstrap for styling including Stripe for payments & Authorization Zero for Auth, login and sessions. Completed in about 150 hours over a 6 week period. This application is currently in its... Beta phase...</p>
+        <p>A bespoke Point of Sale built with Ruby on Rails. This invoicing, report tracking, inventory & data charting application was tailored specifically for the needs of a client in need of bringing their business into the digital era. Completed in about 150 hours over a 3 month period. </p>
         </div>
         <div className='modal-links'>
             <a href="https://aqua-modal.herokuapp.com/" target="_blank" ><img src={github}></img></a>

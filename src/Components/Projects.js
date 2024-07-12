@@ -9,7 +9,7 @@ import sass from '../icons8-sass-50.png';
 import plantthumb from '../plant-thumb.png';
 import recthumb from '../rec-thumb.png';
 import aquaticthumb from '../aquatic-thumb.png';
-import wakeythumb from '../wakey-thumb.png';
+import pitthumb from '../pit-thumb.png';
 import foliothumb from '../folio-thumb.png'
 import banana from '../bananastand-GOB-tmb.jpg'
 import AquaModal from './AquaModal';
@@ -57,7 +57,7 @@ const Projects = React.forwardRef((props, ref) => {
       <div className="container" >
       <div className="container-item" onClick={openModal}>
           <h3>Aquatic Dreams<img src={ruby}></img><img src={rails}></img></h3>
-          <p><strong>Bespoke P.O.S, E-commerce,</strong><br/>  inventory & appointment scheduling app, tailored for an aquarium supply & maintenance business. </p>
+          <p><strong>P.O.S.  Reporting</strong>, invoicing, inventory and data charting app, tailored for an aquarium supply & maintenance business to transition them from their long term paper model.</p>
           <div
             className="video-container"
             onMouseEnter={() => handleMouseEnter('aquatic')}
@@ -65,14 +65,15 @@ const Projects = React.forwardRef((props, ref) => {
           >
             {isContainerHovered('aquatic') ? (
               <iframe
-                src="https://www.youtube.com/embed/zQ8caaUxIvY?autoplay=1&mute=1&controls=0&showinfo=0&rel=0"
-                title="Aquatic Video"
+              src="https://www.youtube.com/embed/YKAAsrR1nFY?autoplay=1&mute=1&controls=0&showinfo=0&start=4"
+              title="Aquatic Video"
                 allowFullScreen
               ></iframe>
             ) : (
               <img
                 src={aquaticthumb}
                 alt="Aquatic Dreams Thumbnail"
+                style={{ transform: 'scale(1.16)' }}
               />
             )}
           </div>
@@ -114,23 +115,23 @@ const Projects = React.forwardRef((props, ref) => {
       </div>
       <div className="container">
       <div className="container-item" onClick={openModal}>
-      <h3>Wakey Wakey App<img src={ruby}></img><img src={rails}></img></h3>
-          <p><strong>Scrape, Filter & Email</strong><br/>One day project that scrapes a gym website for daily workout, suggests equipment, pulls local weather & emails you bright & early.</p>
+      <h3>The Pit<img src={ruby}></img><img src={rails}></img></h3>
+          <p><strong>Streamline Apricot SEO's Ops in this Hub or 'Pit' </strong><br/>Integrate CallRail, Google Analytics, and more into a unified dashboard. Automate forms and daily tasks to allow employees to focus on client success and revenue generation.</p>
           <div
             className="video-container"
-            onMouseEnter={() => handleMouseEnter('wakey')}
-            onMouseLeave={() => handleMouseLeave('wakey')}
+            onMouseEnter={() => handleMouseEnter('pit')}
+            onMouseLeave={() => handleMouseLeave('pit')}
           >
-            {isContainerHovered('wakey') ? (
+            {isContainerHovered('pit') ? (
               <iframe
                 src="https://www.youtube.com/embed/zeF_KB8g9WE?autoplay=1&mute=1&controls=0&showinfo=0&rel=0"
-                title="Wakey Video"
+                title="pit Video"
                 allowFullScreen
               ></iframe>
             ) : (
               <img
-                src={wakeythumb}
-                alt="Wakey Thumbnail"
+                src={pitthumb}
+                alt="pit Thumbnail"
               />
             )}
           </div>
