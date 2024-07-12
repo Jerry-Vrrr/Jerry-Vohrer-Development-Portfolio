@@ -1,8 +1,15 @@
 
 .projects {
+  border-top: 1px solid transparent;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  margin: 4em;
+  padding-top: 2.5em;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start; 
+  // margin-right: 3em; /* Adjust this value to shift it right */
 }
 
 .container {
@@ -13,7 +20,6 @@
   width: auto;
   margin: auto;
   height: auto;
-  margin-right: 6em;
 }
 
 .container-item {
@@ -85,9 +91,25 @@ h3 {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  margin-bottom: -.5em;
   text-decoration: underline;
   letter-spacing: .2em;
+}
+.description {
+  margin-left: 11em;
+  max-width: 50em;
+  margin-top: -1.3em;
+  font-size: medium;
+  font-weight: 300;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.separator {
+  margin-left: 11em;
+  border: 0;
+  height: 1px; /* Adjust the height as needed */
+  background-color: #000; /* Adjust the color as needed */
+  margin-bottom: 1em; /* Adjust the spacing as needed */
 }
 
 @media screen and (max-width: 768px) {

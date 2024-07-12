@@ -16,7 +16,7 @@ function App() {
   // General function to scroll to a specific ref
   const scrollToRef = (ref) => {
     if (ref.current) {
-      const offset = -10; // Height of the fixed navbar or any other offset you need
+      const offset = 7; // Height of the fixed navbar or any other offset you need
       const y = ref.current.getBoundingClientRect().top + window.scrollY - offset;
   
       window.scrollTo({ top: y, behavior: 'smooth' });

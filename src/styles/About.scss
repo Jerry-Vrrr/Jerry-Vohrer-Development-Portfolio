@@ -4,9 +4,13 @@
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: space-around;
-    padding: 5em 22em 4em 12em;
+    padding: 5em 16em 0em 8em;
     line-height: 1.5em;
     font-weight: 500;
+    border-top: 1px solid transparent;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
     strong {
         text-decoration: none;
         margin-bottom: -.5em;
