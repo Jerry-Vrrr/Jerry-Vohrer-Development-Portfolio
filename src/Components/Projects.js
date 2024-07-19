@@ -58,7 +58,7 @@ const Projects = React.forwardRef((props, ref) => {
       <div className="container" >
       <div className="container-item" onClick={openModal}>
           <h3>Aquatic Dreams<img src={ruby}></img><img src={rails}></img></h3>
-          <p><strong>P.O.S.  Reporting</strong>, invoicing, inventory and data charting app, tailored for an aquarium supply & maintenance business to transition them from their O.G. paper model.</p>
+          <p><strong>Invoicing, inventory & data App</strong> tailored for an aquarium supply & maintenance business, assising them to transition from a paper model.</p>
           <div
             className="video-container"
             onMouseEnter={() => handleMouseEnter('aquatic')}
@@ -117,8 +117,8 @@ const Projects = React.forwardRef((props, ref) => {
       <div className="container">
       <div className="container-item" onClick={openModal}>
       <h3>The Pit<img src={ruby}></img><img src={rails}></img></h3>
-          <p><strong>Streamline Apricot SEO's Ops in this Hub or 'Pit' </strong><br/>Integrate CallRail, Google Analytics, and more into a unified dashboard. Automate forms and daily tasks to allow employees to focus on client success and revenue generation.</p>
-          <div
+      <p><strong>Apricot SEO Hub </strong>integrates tools and processes, automating forms, data and reporting so employees can focus on clients and revenue generation.</p>          
+      <div
             className="video-container"
             onMouseEnter={() => handleMouseEnter('pit')}
             onMouseLeave={() => handleMouseLeave('pit')}
