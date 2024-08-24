@@ -53,12 +53,12 @@ const Projects = React.forwardRef((props, ref) => {
     <div className='projects' ref={ref}>
             <ProjectModal isOpen={isModalOpen} onClose={closeModal}   AquaModalComponent={AquaModal} images={aquaImages}>
       </ProjectModal>
-      <h2>My Work: Transforming Ideas into Solutions</h2>
+      <h2 >My Work: Transforming Ideas into Solutions</h2>
       <h4 className='description'>Streamlining procedures and crafting innovative solutions to help businesses save time and money.</h4>
       <div className="container" >
       <div className="container-item" onClick={openModal}>
           <h3>Aquatic Dreams<img src={ruby}></img><img src={rails}></img></h3>
-          <p><strong>Invoicing, inventory & data App</strong> tailored for an aquarium supply & maintenance business, assising them to transition from a paper model.</p>
+          <p><strong>Invoicing, inventory & data App</strong> tailored for an aquarium supply & maintenance business, assising them to transition from a paper model into the modern era.</p>
           <div
             className="video-container"
             onMouseEnter={() => handleMouseEnter('aquatic')}
@@ -117,7 +117,7 @@ const Projects = React.forwardRef((props, ref) => {
       <div className="container">
       <div className="container-item" onClick={openModal}>
       <h3>The Pit<img src={ruby}></img><img src={rails}></img></h3>
-      <p><strong>Apricot SEO Hub </strong>integrates tools and processes, automating forms, data and reporting so employees can focus on clients and revenue generation.</p>          
+      <p><strong>Apricot SEO Hub </strong>integrates tools and processes, automating forms, data and reporting so employees can focus their energy on clients and revenue generation.</p>          
       <div
             className="video-container"
             onMouseEnter={() => handleMouseEnter('pit')}
@@ -125,8 +125,8 @@ const Projects = React.forwardRef((props, ref) => {
           >
             {isContainerHovered('pit') ? (
               <iframe
-                src="https://www.youtube.com/embed/zeF_KB8g9WE?autoplay=1&mute=1&controls=0&showinfo=0&rel=0"
-                title="pit Video"
+              src="https://www.youtube.com/embed/t5MWBOOLDNg?autoplay=1&mute=1&controls=0&showinfo=0"
+              title="pit Video"
                 allowFullScreen
               ></iframe>
             ) : (
