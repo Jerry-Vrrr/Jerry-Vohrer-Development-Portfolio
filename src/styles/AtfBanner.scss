@@ -2,13 +2,13 @@
     display: flex;
     overflow-x: hidden;
     justify-content: left;
-    align-items: center; 
+    align-items: center;
     padding-top: 4em;
     margin-right: 3em;
 }
 
 .image-container {
-    flex: 0 1 100%; 
+    flex: 0 1 100%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -16,25 +16,20 @@
     z-index: -500;
 }
 
-.frankie {
+.frankie, .frankie-clicked {
     margin-top: 7em;
-    max-width: 80%; /* To ensure it scales within the container */
-    height: auto; /* To maintain aspect ratio */
+    max-width: 80%; /* Ensure scaling within the container */
+    height: auto; /* Maintain aspect ratio */
     opacity: 0.9;
-   position: sticky; 
+    position: sticky;
 }
 
 .frankie-clicked {
-    margin-top: 7em;
-    max-width: 80%; 
-    height: auto; 
-    opacity: 0.9;
-   position: sticky; 
-    animation: bounce 15s infinite;
+    animation: bounce 15s infinite; /* Keep the bounce animation */
 }
 
 .text-container {
-    flex: 0 0 50%; 
+    flex: 0 0 50%;
     display: flex;
     margin-top: 7em;
     z-index: -500;
@@ -44,23 +39,39 @@
 }
 
 h1 {
-    font-weight: bold;
     line-height: 1.3em;
-    font-size: 2.5em;
-    padding-right: 4em; 
+    font-size: 2.8em;
+    padding-right: 4em;
+    font-weight: 600;
 }
 
+/* Mobile-friendly adjustments */
 @media (max-width: 768px) {
     .atf-banner {
         flex-direction: column;
+        justify-content: center; /* Ensure alignment */
+        align-items: center;
+        padding: 2em 1em; /* Adjust padding for better fit */
     }
 
     .image-container, .text-container {
         flex: 0 1 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .frankie, .frankie-clicked {
+        margin-top: 2em; /* Reduce top margin on mobile */
+        max-width: 70%; /* Further reduce size for mobile */
+        margin-bottom: -8em;
     }
 
     h1 {
-        font-size: 2.5em; 
+        font-size: 2em; /* Adjust for smaller screens */
+        padding-right: 0;
+        margin-top: 1em;
     }
 }
 
@@ -81,13 +92,13 @@ h1 {
         transform: translate(0px, -20px) scale(1);
     }
     50% {
-        transform: translate(-30px, -10px) scale(.9);
+        transform: translate(-30px, -10px) scale(0.9);
     }
     60% {
-        transform: translate(-40px, 20px) scale(.95);
+        transform: translate(-40px, 20px) scale(0.95);
     }
     70% {
-        transform: translate(20px, -10px) scale(.98);
+        transform: translate(20px, -10px) scale(0.98);
     }
     80% {
         transform: translate(10px, 30px) scale(1);
@@ -96,5 +107,3 @@ h1 {
         transform: translate(-30px, -20px) scale(1.2);
     }
 }
-
-

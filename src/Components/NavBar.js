@@ -41,9 +41,9 @@ const NavBar = () => {
                 <a href="/">
             <img src={jvlogo} className="jv-logo" alt="logo" />
         </a> 
-            <a className='nav-btn' href="/about">About</a>
-            <a className='nav-btn' href="/projects">Projects</a>
-            <a className='nav-btn' href="/contact">Contact</a>
+            <a className='nav-btn' href="/about">ABOUT</a>
+            <a className='nav-btn' href="/projects">PROJECTS</a>
+            <a className='nav-btn' href="/contact">CONTACT</a>
     <HamburgerMenu />
     </nav>
   );

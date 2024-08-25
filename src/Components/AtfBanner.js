@@ -19,12 +19,12 @@ const AtfBanner = () => {
       </div>
       <div className="text-container">
       <h1>
-  Hi, friends! I’m Jerry. <br />
-  A full stack web developer. <br />
-  I am VERY serious! <br />
-  Especially about very, <br />
-  very silly things. <br />
-  Like Sexy Frankenstein.
+  HI, FRIENDS! I’M JERRY. <br />
+  FULL STACK DEVELOPER. <br />
+  I AM VERY SERIOUS! <br />
+  ESPECIALLY ABOUT <br />
+  VERY SILLY THINGS. <br />
+  SUCH AS, WELL... <br />SEXY FRANKENSTEIN.
 </h1>      </div>
     </div>
   );
