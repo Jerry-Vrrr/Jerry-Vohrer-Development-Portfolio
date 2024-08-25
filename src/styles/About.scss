@@ -15,13 +15,15 @@
 
 .about strong {
     text-decoration: none;
-    margin-bottom: -.5em;
-    font-size: 1.25em;
+    font-weight: 600;
+    // margin-bottom: -.5em;
+    font-size: 1.6em;
 }
 
 .about p {
     font-weight: 500;
-    margin-bottom: .01em;
+    font-size: larger;
+    margin-bottom: .03em;
     padding-bottom: 3px;
     margin-top: .75em;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
@@ -31,7 +33,8 @@
 }
 
 .about i {
-    font-weight: 700;
+    font-size: 1.2em;
+    font-weight: 600;
 }
 
 /* Mobile-friendly adjustments */

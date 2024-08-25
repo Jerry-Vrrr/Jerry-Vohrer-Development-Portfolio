@@ -6,6 +6,7 @@ import AtfBanner from './Components/AtfBanner';
 import Projects from './Components/Projects';
 import About from './Components/About';
 import Contact from './Components/Contact';
+import Footer from './Components/Footer';  // Import the Footer component
 
 function App() {
   const projectsRef = useRef(null);
@@ -38,7 +39,7 @@ function App() {
 
   return (
     <div className="App">
-                <NavBar scrollToRef={scrollToRef} aboutRef={aboutRef} projectsRef={projectsRef} />
+      <NavBar scrollToRef={scrollToRef} aboutRef={aboutRef} projectsRef={projectsRef} />
 
       {location.pathname !== '/contact' && (
         <>
@@ -52,6 +53,9 @@ function App() {
       <Routes>
         <Route path="/contact" element={<Contact />} />
       </Routes>
+
+      {/* Footer will appear at the bottom of every page */}
+      <Footer />
     </div>
   );
 }

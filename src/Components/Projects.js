@@ -52,7 +52,7 @@ const Projects = React.forwardRef((props, ref) => {
             <ProjectModal isOpen={isModalOpen} onClose={closeModal}   AquaModalComponent={AquaModal} images={aquaImages}>
       </ProjectModal>
       <container className='header-box'>
-      <h2 >My Work: Transforming Ideas into Solutions</h2>
+      <h2 className='project-header'>My Work: Transforming Ideas into Solutions</h2>
       <h4 className='description'>Streamlining procedures and crafting innovative solutions to help businesses save time and money.</h4>
       </container>
 

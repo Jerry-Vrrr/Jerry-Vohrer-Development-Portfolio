@@ -19,7 +19,9 @@
   margin: auto;
   height: auto;
 }
-
+.project-header {
+  font-size: xx-large;
+}
 .container-item {
   border: 1px solid #ccc;
   width: calc((100% / 2) - 6em);
@@ -125,7 +127,9 @@ h3 {
     margin: 2em 1em; /* Reduced margin on mobile */
     padding-top: 1em; /* Reduced padding */
   }
-
+  .project-header {
+    font-size: large;
+}
   .container {
     width: 100%;
     flex-direction: column;
