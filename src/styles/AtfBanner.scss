@@ -16,21 +16,12 @@
     z-index: -500;
 }
 
-.frankie {
+.frankie, .frankie-clicked {
     margin-top: 7em;
     max-width: 80%; /* To ensure it scales within the container */
     height: auto; /* To maintain aspect ratio */
     opacity: 0.9;
-   position: sticky; 
-}
-
-.frankie-clicked {
-    margin-top: 7em;
-    max-width: 80%; 
-    height: auto; 
-    opacity: 0.9;
-   position: sticky; 
-    animation: bounce 15s infinite;
+    position: sticky; 
 }
 
 .text-container {
@@ -50,51 +41,30 @@ h1 {
     padding-right: 4em; 
 }
 
+/* Mobile-friendly adjustments */
 @media (max-width: 768px) {
     .atf-banner {
         flex-direction: column;
+        align-items: center; /* Centers the content */
+        padding: 2em; /* Reduces padding for better fit */
     }
 
     .image-container, .text-container {
         flex: 0 1 100%;
+        display: flex;
+        justify-content: center; /* Center the text and image containers */
+        align-items: center;
+        text-align: center; /* Aligns the text centrally */
+        padding: 0; /* Remove unnecessary padding */
     }
 
     h1 {
-        font-size: 2.5em; 
+        font-size: 2em; /* Slightly reduce font size for better fit */
+        padding-right: 0; /* Remove padding on smaller screens */
+    }
+
+    .frankie, .frankie-clicked {
+        margin-top: 4em; /* Reduce top margin for better spacing */
+        max-width: 70%; /* Further reduce the image size */
     }
 }
-
-@keyframes bounce {
-    0%, 100% {
-        transform: translate(20px, -20px) scale(1);
-    }
-    10% {
-        transform: translate(30px, 10px) scale(1.2);
-    }
-    20% {
-        transform: translate(40px, 20px) scale(1.25);
-    }
-    30% {
-        transform: translate(-20px, 40px) scale(1.2);
-    }
-    40% {
-        transform: translate(0px, -20px) scale(1);
-    }
-    50% {
-        transform: translate(-30px, -10px) scale(.9);
-    }
-    60% {
-        transform: translate(-40px, 20px) scale(.95);
-    }
-    70% {
-        transform: translate(20px, -10px) scale(.98);
-    }
-    80% {
-        transform: translate(10px, 30px) scale(1);
-    }
-    90% {
-        transform: translate(-30px, -20px) scale(1.2);
-    }
-}
-
-

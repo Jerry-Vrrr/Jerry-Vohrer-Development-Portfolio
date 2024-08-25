@@ -11,40 +11,48 @@
   width: stretch;
   position: fixed;
   padding: 4em;
-  transition: top 0.3s;
-  top: 0;
-  left: 0; /* Add this line */
-  right: 0; /* Add this line */
-  width: 100%;
   transition: top 0.5s ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
 
 .nav-bar.hidden {
   top: -100%; 
 }
 
-@media (max-width: 500px) {
-  .nav-bar .nav-btn {
-    display: none;
-  }
-}
-
 .jv-logo {
-  width: 10em;
+  width: 11em;
   align-self: flex-start;
 }
 
 .nav-btn {
-  font-weight: 950;
-  font-size: x-large;
-  padding: 1.5em;
+  font-weight: 650;
+  font-size: 3em;
+  padding: 1em;
   text-decoration: none;
   color: black;
   align-self: center;
 }
 
+/* Mobile-friendly adjustments */
 @media (max-width: 500px) {
+  .nav-bar {
+    padding: 1.5em; /* Reduce padding to fit smaller screens */
+  }
+
+  .jv-logo {
+    width: 4em; /* Shrink the logo on mobile */
+  }
+
   .nav-btn {
-    display: none;
+    font-size: .9em; /* Shrink the navigation text */
+    font-weight: 800;
+    padding: 0.5em;
+  }
+
+  .nav-bar .nav-btn {
+    display: block; /* Ensure buttons are displayed, just smaller */
   }
 }

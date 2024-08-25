@@ -10,8 +10,6 @@ import plantthumb from '../plant-thumb.png';
 import recthumb from '../rec-thumb.png';
 import aquaticthumb from '../aquatic-thumb.png';
 import pitthumb from '../pit-thumb.png';
-import foliothumb from '../folio-thumb.png'
-import banana from '../bananastand-GOB-tmb.jpg'
 import AquaModal from './AquaModal';
 
 const Projects = React.forwardRef((props, ref) => {
@@ -53,11 +51,44 @@ const Projects = React.forwardRef((props, ref) => {
     <div className='projects' ref={ref}>
             <ProjectModal isOpen={isModalOpen} onClose={closeModal}   AquaModalComponent={AquaModal} images={aquaImages}>
       </ProjectModal>
+      <container className='header-box'>
       <h2 >My Work: Transforming Ideas into Solutions</h2>
       <h4 className='description'>Streamlining procedures and crafting innovative solutions to help businesses save time and money.</h4>
-      <div className="container" >
+      </container>
+
+
+     <div className= "container" >
       <div className="container-item" onClick={openModal}>
-          <h3>Aquatic Dreams<img src={ruby}></img><img src={rails}></img></h3>
+      <h3>The Pit</h3>
+      <div className='icons'><img src={react}></img><img src={js}></img><img src={ruby}></img><img className='rails' src={rails}></img></div>
+      <p><strong>Apricot SEO Hub </strong>integrates tools and processes, automating forms, data and reporting so employees can focus their energy on creativity, the clients and revenue generation.</p>          
+      <div
+            className="video-container"
+            onMouseEnter={() => handleMouseEnter('pit')}
+            onMouseLeave={() => handleMouseLeave('pit')}
+          >
+            {isContainerHovered('pit') ? (
+              <iframe
+              src="https://www.youtube.com/embed/t5MWBOOLDNg?autoplay=1&mute=1&controls=0&showinfo=0"
+              title="pit Video"
+                allowFullScreen
+              ></iframe>
+            ) : (
+              <img
+                src={pitthumb}
+                alt="pit Thumbnail"
+              />
+            )}
+          </div>
+          <div className='project-links'>
+        <a href="">Deployed</a>
+         <a href="">Presentation</a>
+         <a href="">GitHub</a>
+       </div>
+        </div>
+      <div className="container-item" onClick={openModal}>
+          <h3>Aquatic Dreams</h3>
+          <div className='icons'><img src={ruby}></img><img className='rails' src={rails}></img></div>
           <p><strong>Invoicing, inventory & data App</strong> tailored for an aquarium supply & maintenance business, assising them to transition from a paper model into the modern era.</p>
           <div
             className="video-container"
@@ -84,8 +115,16 @@ const Projects = React.forwardRef((props, ref) => {
          <a href="">GitHub</a>
        </div>
         </div>
-        <div className="container-item">
-          <h3>Rec.Me<img src={react}></img><img src={js}></img><img src={sass}></img></h3>
+
+
+        
+
+      </div>
+      <div className="container">
+
+      <div className="container-item">
+          <h3>Rec.Me</h3>
+          <div className='icons'><img src={react}></img><img src={js}></img><img src={sass}></img></div>
           <p><strong>Music Recommendation App</strong> Gamified to test music knowledge and decision making. Can <i>you</i> get from Beyonce to Black Sabbath in 6 moves or less?</p>
           <div
             className="video-container"
@@ -112,38 +151,9 @@ const Projects = React.forwardRef((props, ref) => {
          <a href="">GitHub</a>
        </div>
         </div>
-
-      </div>
-      <div className="container">
-      <div className="container-item" onClick={openModal}>
-      <h3>The Pit<img src={ruby}></img><img src={rails}></img></h3>
-      <p><strong>Apricot SEO Hub </strong>integrates tools and processes, automating forms, data and reporting so employees can focus their energy on clients and revenue generation.</p>          
-      <div
-            className="video-container"
-            onMouseEnter={() => handleMouseEnter('pit')}
-            onMouseLeave={() => handleMouseLeave('pit')}
-          >
-            {isContainerHovered('pit') ? (
-              <iframe
-              src="https://www.youtube.com/embed/t5MWBOOLDNg?autoplay=1&mute=1&controls=0&showinfo=0"
-              title="pit Video"
-                allowFullScreen
-              ></iframe>
-            ) : (
-              <img
-                src={pitthumb}
-                alt="pit Thumbnail"
-              />
-            )}
-          </div>
-          <div className='project-links'>
-        <a href="">Deployed</a>
-         <a href="">Presentation</a>
-         <a href="">GitHub</a>
-       </div>
-        </div>
         <div className="container-item">
-          <h3>Plant Swapper<img src={react}></img><img src={ruby}></img><img src={rails}></img></h3>
+          <h3>Plant Swapper</h3>
+          <div className='icons'><img src={react}></img><img src={ruby}></img><img className='rails' src={rails}></img></div>
           <p><strong>Plant Propagation Marketplace</strong> Chat via mobile with other plant heads, swap plants, seeds, & clippings from anywhere in the universe that FedEx delivers!</p>
           <div
             className="video-container"
