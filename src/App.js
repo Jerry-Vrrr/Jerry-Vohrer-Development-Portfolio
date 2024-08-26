@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import './styles/App.css';
 import NavBar from './Components/NavBar';
 import AtfBanner from './Components/AtfBanner';
