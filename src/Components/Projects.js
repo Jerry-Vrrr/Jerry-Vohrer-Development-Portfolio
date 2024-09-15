@@ -10,18 +10,58 @@ import plantthumb from '../plant-thumb.png';
 import recthumb from '../rec-thumb.png';
 import aquaticthumb from '../aquatic-thumb.png';
 import pitthumb from '../pit-thumb.png';
-import AquaModal from './AquaModal';
+
+const projectData = [
+  {
+    id: 'pit',
+    title: 'The Pit',
+    description: 'Apricot SEO Hub integrates tools and processes, automating forms, data and reporting so employees can focus their energy on creativity, the clients, and revenue generation.',
+    images: [pitthumb],
+    icons: [react, js, ruby, rails],
+    links: ['deployed_link_1', 'presentation_link_1', 'github_link_1'],
+  },
+  {
+    id: 'aquatic',
+    title: 'Aquatic Dreams',
+    description: 'Invoicing, inventory & data App tailored for an aquarium supply & maintenance business, assisting them to transition from a paper model into the modern era.',
+    images: [aquaticthumb],
+    icons: [ruby, rails],
+    links: ['deployed_link_2', 'presentation_link_2', 'github_link_2'],
+  },
+  {
+    id: 'recMe',
+    title: 'Rec.Me',
+    description: 'Music Recommendation App gamified to test music knowledge and decision making. Can you get from Beyonce to Black Sabbath in 6 moves or less?',
+    images: [recthumb],
+    icons: [react, js, sass],
+    links: ['deployed_link_3', 'presentation_link_3', 'github_link_3'],
+  },
+  {
+    id: 'plantSwapper',
+    title: 'Plant Swapper',
+    description: 'Plant Propagation Marketplace: Chat via mobile with other plant enthusiasts, swap plants, seeds, & clippings from anywhere in the universe that FedEx delivers!',
+    images: [plantthumb],
+    icons: [react, ruby, rails],
+    links: ['deployed_link_4', 'presentation_link_4', 'github_link_4'],
+  }
+];
 
 const Projects = React.forwardRef((props, ref) => {
-
- const aquaImages = [
-    "https://agentestudio.com/uploads/ckeditor/pictures/1938/pos_design_8.png",
-    "https://cdn.dribbble.com/users/2338294/screenshots/6846027/inventory_artwork_dribble_4x.jpg",
-    "https://img.freepik.com/premium-vector/user-interface-entering-personal-information-login-into-website-account-concept-secure-login-password-protection_110633-1392.jpg"
-  ]
   // Initialize a state object where each key represents a container's hover state
   const [hoverStates, setHoverStates] = useState({});
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentProject, setCurrentProject] = useState({});
 
+  // Function to open the modal with specific project data
+  const openModal = (projectData) => {
+    setCurrentProject(projectData);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setCurrentProject({})
+};
   // Handles the mouse enter event by setting the hover state to true for the container with id `id`
   const handleMouseEnter = (id) => {
     setHoverStates(prevState => ({ ...prevState, [id]: true }));
@@ -37,20 +77,9 @@ const Projects = React.forwardRef((props, ref) => {
     return hoverStates[id] || false;
   };
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
   return (
     <div className='projects' ref={ref}>
-            <ProjectModal isOpen={isModalOpen} onClose={closeModal}   AquaModalComponent={AquaModal} images={aquaImages}>
-      </ProjectModal>
+    <ProjectModal isOpen={isModalOpen} onClose={closeModal} projectData={currentProject} />
       <container className='header-box'>
       <h2 className='project-header'>My Work: Transforming Ideas into Solutions</h2>
       <h4 className='description'>Streamlining procedures and crafting innovative solutions to help businesses save time and money.</h4>
@@ -58,7 +87,7 @@ const Projects = React.forwardRef((props, ref) => {
 
 
      <div className= "container" >
-      <div className="container-item" onClick={openModal}>
+      <div className="container-item" onClick={() => openModal(projectData[0])}>
       <h3>The Pit</h3>
       <div className='icons'><img src={react}></img><img src={js}></img><img src={ruby}></img><img className='rails' src={rails}></img></div>
       <p><strong>Apricot SEO Hub </strong>integrates tools and processes, automating forms, data and reporting so employees can focus their energy on creativity, the clients and revenue generation.</p>          
@@ -86,7 +115,7 @@ const Projects = React.forwardRef((props, ref) => {
          <a href="">GitHub</a>
        </div>
         </div>
-      <div className="container-item" onClick={openModal}>
+      <div className="container-item" onClick={() => openModal(projectData[1])}>
           <h3>Aquatic Dreams</h3>
           <div className='icons'><img src={ruby}></img><img className='rails' src={rails}></img></div>
           <p><strong>Invoicing, inventory & data App</strong> tailored for an aquarium supply & maintenance business, assising them to transition from a paper model into the modern era.</p>
@@ -122,7 +151,7 @@ const Projects = React.forwardRef((props, ref) => {
       </div>
       <div className="container">
 
-      <div className="container-item">
+      <div className="container-item" onClick={() => openModal(projectData[2])}>
           <h3>Rec.Me</h3>
           <div className='icons'><img src={react}></img><img src={js}></img><img src={sass}></img></div>
           <p><strong>Music Recommendation App</strong> Gamified to test music knowledge and decision making. Can <i>you</i> get from Beyonce to Black Sabbath in 6 moves or less?</p>
@@ -151,7 +180,7 @@ const Projects = React.forwardRef((props, ref) => {
          <a href="">GitHub</a>
        </div>
         </div>
-        <div className="container-item">
+        <div className="container-item" onClick={() => openModal(projectData[3])}>
           <h3>Plant Swapper</h3>
           <div className='icons'><img src={react}></img><img src={ruby}></img><img className='rails' src={rails}></img></div>
           <p><strong>Plant Propagation Marketplace</strong> Chat via mobile with other plant heads, swap plants, seeds, & clippings from anywhere in the universe that FedEx delivers!</p>
